@@ -7,21 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-200 flex justify-center items-center h-screen">
-    <div class="bg-white shadow-lg max-w-xl rounded-lg md:flex overflow-hidden justify-center">
-        <div class="">
+    <div class="bg-white shadow-lg max-w-xl rounded-lg md:flex overflow-hidden">
+        <!-- Conteneur parent de l'image -->
+        <div class="flex-1 h-40 md:h-auto">
             <img 
                 src="https://th.bing.com/th/id/R.e7cb3cf7e8ca907bbdaec80f88febefc?rik=hj8sRZHYAuDPIA&pid=ImgRaw&r=0" 
-                alt="" 
-                class="h-40 object-cover w-full" 
+                alt="Illustration"
+                class="h-full w-full object-cover md:max-h-80" 
             />
         </div>
-        <div class="p-4">
+        <!-- Section droite -->
+        <div class="p-4 flex flex-col justify-center">
             <h1 class="text-xl font-bold mb-2">Connexion</h1>
-            <div class="l">
-                <label for="username" class="block">Username</label>
-                <input type="text" class="border ">
+            <div class="mb-4">
+                <label for="username" class="block">Nom d'utilisateur</label>
+                <input type="text" id="username" class="border w-full px-3 py-2 rounded">
             </div>
+            <div class="mb-4">
+                <label for="username" class="block">Nom d'utilisateur</label>
+                <input type="text" id="username" class="border w-full px-3 py-2 rounded">
+            </div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Se connecter</button>
         </div>
     </div>
-  </body>
+</body>
+
 </html>

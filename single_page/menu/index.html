@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsive avec Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100">
+  <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div>
+          <a href="#" class="flex items-center text-gray-800 font-bold text-xl">
+            <svg class="w-6 h-6 mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+            MonLogo
+          </a>
+        </div>
+        <!-- Menu desktop -->
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="py-2 px-3 text-gray-700 hover:text-blue-500">Accueil</a>
+          <a href="#" class="py-2 px-3 text-gray-700 hover:text-blue-500">À Propos</a>
+          <a href="#" class="py-2 px-3 text-gray-700 hover:text-blue-500">Services</a>
+          <a href="#" class="py-2 px-3 text-gray-700 hover:text-blue-500">Contact</a>
+        </div>
+        <!-- Bouton mobile -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu mobile -->
+    <div class="mobile-menu hidden md:hidden">
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Accueil</a>
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">À Propos</a>
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Services</a>
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle du menu mobile
+    const btn = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>

@@ -30,9 +30,9 @@
             >
         </nav>
 
-        <div class="flex flex-col">
-            <div class="lg:w-1/2 md:block">
-                <div class="relative z-10 text-white mt-20 lg:max-w-lg ">
+        <div class="flex">
+            <div class="w-1/2 md:block">
+                <div class="relative z-10 text-white mt-20 max-w-lg ">
                     <h1 class="text-6xl font-semibold mb-2">Groceries <br>delivery <span class="font-light"> in 15 mins</span></h1>
                     <p class="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cumque quas 
@@ -41,12 +41,12 @@
                     </p>
                 </div>
     
-                <!-- <div class="mt-10 text-white relative z-10">
+                <div class="mt-10 text-white relative z-10">
                     <a href="" class="bg-yellow-300 text-black rounded-3xl py-3 px-8 font-medium mr-4 hover:bg-transparent hover:border hover:border-yellow-300 hover:text-yellow-300 duration-300 border border-transparent ">Order now</a>
                     <a href="" class="items-center justify-center">Download app <span class="text-lg inline-block rotate-90">&#10148;</span> </a>
-                </div> -->
+                </div>
             </div>
-            <div class="lg:w-1/2 relative z-10 md:block mt-6">
+            <div class="w-1/2 relative z-10 md:block">
                 <img 
                     src="https://static.vecteezy.com/system/resources/previews/034/640/545/original/ai-generated-male-athlete-with-big-muscles-isolated-on-transparent-background-man-with-muscular-torso-and-large-biceps-png.png"
                     alt="" 

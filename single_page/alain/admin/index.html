@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Conteneur principal -->
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-5 hidden md:flex flex-col h-screen shadow-lg">
+            <!-- Logo + Titre -->
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">⚡</span>
+                <h1 class="text-2xl font-bold">Admin Panel</h1>
+            </div>
+        
+            <!-- Navigation -->
+            <nav class="mt-8 flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>🏠</span>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>📦</span>
+                            <span>Produits</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>👥</span>
+                            <span>Utilisateurs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>📊</span>
+                            <span>Statistiques</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>⚙️</span>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <!-- Bouton Déconnexion -->
+            <div class="mt-auto">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg bg-red-600 hover:bg-red-700 transition">
+                    <span>🚪</span>
+                    <span>Déconnexion</span>
+                </a>
+            </div>
+        </aside>
+        
+
+        <!-- Contenu principal -->
+        <main class="flex-1">
+            <!-- Header -->
+            <header class="bg-white shadow p-5 flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Tableau de Bord</h2>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-700">Admin</span>
+                    <img src="https://i.pravatar.cc/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                </div>
+            </header>
+
+            <!-- Contenu -->
+            <div class="p-6">
+                <!-- Cartes statistiques -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-gray-600">Total Utilisateurs</h3>
+                        <p class="text-3xl font-bold">1,230</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-gray-600">Ventes</h3>
+                        <p class="text-3xl font-bold">8,450 €</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-gray-600">Commandes</h3>
+                        <p class="text-3xl font-bold">356</p>
+                    </div>
+                </div>
+
+                <!-- Liste des utilisateurs récents -->
+                <div class="mt-6 bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Utilisateurs récents</h3>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="p-2 text-left">Nom</th>
+                                <th class="p-2 text-left">Email</th>
+                                <th class="p-2 text-left">Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t">
+                                <td class="p-2">Jean Dupont</td>
+                                <td class="p-2">jean@email.com</td>
+                                <td class="p-2 text-green-600">Actif</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-2">Alice Martin</td>
+                                <td class="p-2">alice@email.com</td>
+                                <td class="p-2 text-red-600">Inactif</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-2">David Renault</td>
+                                <td class="p-2">david@email.com</td>
+                                <td class="p-2 text-green-600">Actif</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

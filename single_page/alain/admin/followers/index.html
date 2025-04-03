@@ -11,7 +11,7 @@
     <!-- Conteneur principal -->
     <div class="flex h-screen">
         <!-- Sidebar -->
-        <aside class="w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-5 hidden md:flex flex-col h-screen shadow-lg">
+        <aside class="fixed top-0 left-0 w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-5 hidden md:flex flex-col h-screen shadow-lg">
             <!-- Logo + Titre -->
             <div class="flex items-center space-x-3">
                 <span class="text-3xl">⚡</span>
@@ -22,33 +22,33 @@
             <nav class="mt-8 flex-1">
                 <ul class="space-y-2">
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
-                            <span>🏠</span>
-                            <span>Accueil</span>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">🏠</span>
+                            <span class="text-sm font-medium">Accueil</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
-                            <span>📦</span>
-                            <span>News</span>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">📦</span>
+                            <span class="text-sm font-medium">News</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
-                            <span>👥</span>
-                            <span>Followers</span>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">👥</span>
+                            <span class="text-sm font-medium">Followers</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
-                            <span>📊</span>
-                            <span>Offres</span>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">📊</span>
+                            <span class="text-sm font-medium">Offres</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
-                            <span>⚙️</span>
-                            <span>Paramètres</span>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">⚙️</span>
+                            <span class="text-sm font-medium">Paramètres</span>
                         </a>
                     </li>
                 </ul>
@@ -56,16 +56,16 @@
         
             <!-- Bouton Déconnexion -->
             <div class="mt-auto">
-                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg bg-red-500 hover:bg-red-600 transition">
-                    <span>🚪</span>
-                    <span>Déconnexion</span>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg bg-red-500 hover:bg-red-600 transition duration-300 ease-in-out">
+                    <span class="text-lg">🚪</span>
+                    <span class="text-sm font-medium">Déconnexion</span>
                 </a>
             </div>
         </aside>
         
 
         <!-- Contenu principal -->
-        <main class="flex-1">
+        <main class="flex-1 ml-64">
             <!-- Header -->
             <header class="bg-white shadow p-5 flex justify-between items-center">
                 <h2 class="text-xl font-semibold">Tableau de Bord</h2>

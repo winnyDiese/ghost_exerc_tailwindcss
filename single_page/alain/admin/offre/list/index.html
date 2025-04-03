@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+
+    <!-- Conteneur principal -->
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="fixed top-0 left-0 w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-5 hidden md:flex flex-col h-screen shadow-lg">
+            <!-- Logo + Titre -->
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">⚡</span>
+                <h1 class="text-2xl font-bold">Admin Panel</h1>
+            </div>
+        
+            <!-- Navigation -->
+            <nav class="mt-8 flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">🏠</span>
+                            <span class="text-sm font-medium">Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">📦</span>
+                            <span class="text-sm font-medium">News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">👥</span>
+                            <span class="text-sm font-medium">Followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">📊</span>
+                            <span class="text-sm font-medium">Offres</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                            <span class="text-lg">⚙️</span>
+                            <span class="text-sm font-medium">Paramètres</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <!-- Bouton Déconnexion -->
+            <div class="mt-auto">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg bg-red-500 hover:bg-red-600 transition duration-300 ease-in-out">
+                    <span class="text-lg">🚪</span>
+                    <span class="text-sm font-medium">Déconnexion</span>
+                </a>
+            </div>
+        </aside>
+        
+
+      <!-- Contenu principal -->
+        <main class="flex-1 ml-64 mt-16">
+            <!-- Header fixe -->
+            <header class="bg-white shadow p-5 flex justify-between items-center fixed top-0 left-64 right-0 z-10">
+                <h2 class="text-xl font-semibold">Affichage des news</h2>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-700">Admin</span>
+                    <img src="https://i.pravatar.cc/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                </div>
+            </header>
+
+            
+            <!-- Conteneur principal -->
+            <div class="container mx-auto px-4 py-10">
+                <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Liste des news Publiés</h1>
+                
+                <!-- Liste des newss -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    
+                    <!-- news 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/40" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 1</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Technologie</p>
+                            <p class="text-gray-700 mb-4">Ceci est un aperçu du contenu du news. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <!-- news 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/42" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 2</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Voyages</p>
+                            <p class="text-gray-700 mb-4">Un aperçu de l'article de news sur les voyages. Phasellus euismod purus in ante tincidunt, eu tempor odio pharetra...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <!-- news 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/4" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 3</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Alimentation</p>
+                            <p class="text-gray-700 mb-4">Un aperçu sur les newss alimentaires. Nunc maximus quam eu leo consectetur volutpat...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <!-- news 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/10" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 4</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Mode</p>
+                            <p class="text-gray-700 mb-4">Aperçu du contenu du news sur la mode. Nullam luctus dui ut nisl cursus, sed ultrices libero hendrerit...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <!-- news 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/23" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 5</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Santé</p>
+                            <p class="text-gray-700 mb-4">Aperçu du news santé. Integer cursus tortor vitae urna suscipit, ac tincidunt risus vestibulum...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <!-- news 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://i.pravatar.cc/35" alt="Image news" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Titre du news 6</h2>
+                            <p class="text-sm text-gray-500 mb-4">Catégorie : Voyage</p>
+                            <p class="text-gray-700 mb-4">Le voyage et les aventures. Duis vehicula lectus vitae ligula auctor, nec bibendum lectus cursus...</p>
+                            <a href="#" class="text-blue-600 hover:underline">Lire l'article</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

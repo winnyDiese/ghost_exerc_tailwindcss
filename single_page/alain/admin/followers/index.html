@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Conteneur principal -->
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-5 hidden md:flex flex-col h-screen shadow-lg">
+            <!-- Logo + Titre -->
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">⚡</span>
+                <h1 class="text-2xl font-bold">Admin Panel</h1>
+            </div>
+        
+            <!-- Navigation -->
+            <nav class="mt-8 flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>🏠</span>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>📦</span>
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>👥</span>
+                            <span>Followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>📊</span>
+                            <span>Offres</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition">
+                            <span>⚙️</span>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <!-- Bouton Déconnexion -->
+            <div class="mt-auto">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg bg-red-500 hover:bg-red-600 transition">
+                    <span>🚪</span>
+                    <span>Déconnexion</span>
+                </a>
+            </div>
+        </aside>
+        
+
+        <!-- Contenu principal -->
+        <main class="flex-1">
+            <!-- Header -->
+            <header class="bg-white shadow p-5 flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Tableau de Bord</h2>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-700">Admin</span>
+                    <img src="https://i.pravatar.cc/40" alt="Avatar" class="w-10 h-10 rounded-full">
+                </div>
+            </header>
+
+            <!-- Contenu -->
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Liste des followers</h2>
+
+                <!-- Liste des personnes -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m">
+                    <!-- Carte utilisateur -->
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=1" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Jean Dupont</h3>
+                            <p class="text-gray-500">jean@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=2" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Alice Martin</h3>
+                            <p class="text-gray-500">alice@email.com</p>
+                            <span class="text-red-600 bg-red-100 px-3 py-1 text-sm rounded-full">Inactif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=3" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">David Renault</h3>
+                            <p class="text-gray-500">david@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=1" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Jean Dupont</h3>
+                            <p class="text-gray-500">jean@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=2" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Alice Martin</h3>
+                            <p class="text-gray-500">alice@email.com</p>
+                            <span class="text-red-600 bg-red-100 px-3 py-1 text-sm rounded-full">Inactif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=3" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">David Renault</h3>
+                            <p class="text-gray-500">david@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=1" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Jean Dupont</h3>
+                            <p class="text-gray-500">jean@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=2" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Alice Martin</h3>
+                            <p class="text-gray-500">alice@email.com</p>
+                            <span class="text-red-600 bg-red-100 px-3 py-1 text-sm rounded-full">Inactif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=3" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">David Renault</h3>
+                            <p class="text-gray-500">david@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=1" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Jean Dupont</h3>
+                            <p class="text-gray-500">jean@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=2" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">Alice Martin</h3>
+                            <p class="text-gray-500">alice@email.com</p>
+                            <span class="text-red-600 bg-red-100 px-3 py-1 text-sm rounded-full">Inactif</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow flex items-center space-x-4 hover:shadow-md transition">
+                        <img src="https://i.pravatar.cc/80?img=3" alt="Avatar" class="w-14 h-14 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold">David Renault</h3>
+                            <p class="text-gray-500">david@email.com</p>
+                            <span class="text-green-600 bg-green-100 px-3 py-1 text-sm rounded-full">Actif</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

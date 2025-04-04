@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page des Nouvelles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .article {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .article .content {
+            padding: 15px;
+            background-color: white;
+            color: #333;
+        }
+        .article h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .article p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .article .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #2D3748;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Les Dernières Nouvelles</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Article 1 -->
+            <div class="article bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+                <img src="https://i.pravatar.cc/40" alt="Image de l'article">
+                <div class="content">
+                    <h2 class="text-xl font-semibold">Titre de l'Article 1</h2>
+                    <p class="text-gray-600">Un aperçu rapide du contenu de l'article. Ce texte est un exemple et peut être remplacé par un extrait réel.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <!-- Article 2 -->
+            <div class="article bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+                <img src="https://i.pravatar.cc/45" alt="Image de l'article">
+                <div class="content">
+                    <h2 class="text-xl font-semibold">Titre de l'Article 2</h2>
+                    <p class="text-gray-600">Un autre exemple d'article avec un petit extrait pour attirer l'attention des lecteurs.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <!-- Article 3 -->
+            <div class="article bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+                <img src="https://i.pravatar.cc/39" alt="Image de l'article">
+                <div class="content">
+                    <h2 class="text-xl font-semibold">Titre de l'Article 3</h2>
+                    <p class="text-gray-600">Un autre article pour compléter l'affichage. L'idée est de mélanger les contenus pour un effet "désordonné".</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <!-- Article 4 -->
+            <div class="article bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+                <img src="https://i.pravatar.cc/49" alt="Image de l'article">
+                <div class="content">
+                    <h2 class="text-xl font-semibold">Titre de l'Article 4</h2>
+                    <p class="text-gray-600">Voici un quatrième article, également structuré avec un petit extrait et un lien pour la suite.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <!-- Article 5 -->
+            <div class="article bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+                <img src="https://i.pravatar.cc/49" alt="Image de l'article">
+                <div class="content">
+                    <h2 class="text-xl font-semibold">Titre de l'Article 5</h2>
+                    <p class="text-gray-600">Dernier exemple d'article avec un extrait qui donne envie d'en savoir plus. Idéal pour une mise en page désordonnée.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

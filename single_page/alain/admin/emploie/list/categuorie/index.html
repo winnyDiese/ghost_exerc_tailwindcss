@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos par Catégorie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Masquer les catégories non sélectionnées */
+        .hidden-category {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Conteneur de la galerie -->
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-semibold text-center text-gray-800 mb-8">Galerie de Photos par Catégorie</h1>
+
+        <!-- Filtres de catégories -->
+        <div class="flex justify-center mb-6 space-x-4">
+            <button id="all" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700">Tous</button>
+            <button id="nature" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700">Nature</button>
+            <button id="architecture" class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-700">Architecture</button>
+            <button id="animaux" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700">Animaux</button>
+        </div>
+
+        <!-- Grille de photos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
+            <!-- Photo Nature -->
+            <div class="group relative nature">
+                <img src="https://via.placeholder.com/300" alt="Nature 1" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Nature 1</div>
+            </div>
+
+            <!-- Photo Architecture -->
+            <div class="group relative architecture hidden-category">
+                <img src="https://via.placeholder.com/300" alt="Architecture 1" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Architecture 1</div>
+            </div>
+
+            <!-- Photo Animaux -->
+            <div class="group relative animaux hidden-category">
+                <img src="https://via.placeholder.com/300" alt="Animaux 1" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Animaux 1</div>
+            </div>
+
+            <!-- Photo Nature -->
+            <div class="group relative nature">
+                <img src="https://via.placeholder.com/300" alt="Nature 2" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Nature 2</div>
+            </div>
+
+            <!-- Photo Architecture -->
+            <div class="group relative architecture hidden-category">
+                <img src="https://via.placeholder.com/300" alt="Architecture 2" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Architecture 2</div>
+            </div>
+
+            <!-- Photo Animaux -->
+            <div class="group relative animaux hidden-category">
+                <img src="https://via.placeholder.com/300" alt="Animaux 2" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-300">Animaux 2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Sélectionner les boutons de filtre
+        const allButton = document.getElementById('all');
+        const natureButton = document.getElementById('nature');
+        const architectureButton = document.getElementById('architecture');
+        const animauxButton = document.getElementById('animaux');
+
+        // Fonction pour afficher ou masquer les catégories
+        function filterGallery(category) {
+            const allImages = document.querySelectorAll('.group');
+            allImages.forEach((image) => {
+                if (category === 'all' || image.classList.contains(category)) {
+                    image.classList.remove('hidden-category');
+                } else {
+                    image.classList.add('hidden-category');
+                }
+            });
+        }
+
+        // Attacher les événements aux boutons
+        allButton.addEventListener('click', () => filterGallery('all'));
+        natureButton.addEventListener('click', () => filterGallery('nature'));
+        architectureButton.addEventListener('click', () => filterGallery('architecture'));
+        animauxButton.addEventListener('click', () => filterGallery('animaux'));
+    </script>
+
+</body>
+</html>
